@@ -1,7 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
 const NODE_ENV = process.env.NODE_ENV;
-console.log("-----NODE_ENV===", NODE_ENV);
 module.exports = {
   // 根据不同的执行环境配置不同的入口
   entry: NODE_ENV == 'development' ? './src/main.js' : './src/myPlugin/index.js',
